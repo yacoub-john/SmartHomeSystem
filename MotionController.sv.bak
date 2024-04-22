@@ -1,0 +1,19 @@
+module MotionController(
+    input  logic clk,
+    input  logic enable,
+    output logic buzzer,
+    output logic led0,
+    output logic led9
+);
+
+always @(posedge clk) begin
+    if (~enable) begin 
+        led0 <= 1;
+        buzzer <= 1;
+    end else begin 
+        led0 <= 0; 
+        buzzer <= 0;
+    end
+end
+
+endmodule

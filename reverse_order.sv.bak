@@ -1,0 +1,10 @@
+module reverse_order(
+    input [6:0] input_data,
+    output reg [6:0] output_data
+);
+
+always @(*) begin
+    output_data = {input_data[0], input_data[1], input_data[2], input_data[3], input_data[4], input_data[5], input_data[6]};
+end
+
+endmodule

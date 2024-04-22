@@ -1,0 +1,50 @@
+module SEG7_encoder_14bit(
+    input [13:0] iSEG,
+    output reg [3:0] oDIG1,
+    output reg [3:0] oDIG2
+);
+
+always @*
+begin
+    case(iSEG[6:0])
+        7'b1111001: oDIG1 = 4'h1;    // ---t----
+        7'b0100100: oDIG1 = 4'h2;    // |     |
+        7'b0110000: oDIG1 = 4'h3;    // lt    rt
+        7'b0011001: oDIG1 = 4'h4;    // |     |
+        7'b0010010: oDIG1 = 4'h5;    // ---m----
+        7'b0000010: oDIG1 = 4'h6;    // |     |
+        7'b1111000: oDIG1 = 4'h7;    // lb    rb
+        7'b0000000: oDIG1 = 4'h8;    // |     |
+        7'b0011000: oDIG1 = 4'h9;    // ---b----
+        7'b0001000: oDIG1 = 4'ha;
+        7'b0000011: oDIG1 = 4'hb;
+        7'b1000110: oDIG1 = 4'hc;
+        7'b0100001: oDIG1 = 4'hd;
+        7'b0000110: oDIG1 = 4'he;
+        7'b0001110: oDIG1 = 4'hf;
+        7'b1000000: oDIG1 = 4'h0;
+        default: oDIG1 = 4'h0;        // Default to 0 if no match
+    endcase
+    
+    case(iSEG[13:7])
+        7'b1111001: oDIG2 = 4'h1;    // ---t----
+        7'b0100100: oDIG2 = 4'h2;    // |     |
+        7'b0110000: oDIG2 = 4'h3;    // lt    rt
+        7'b0011001: oDIG2 = 4'h4;    // |     |
+        7'b0010010: oDIG2 = 4'h5;    // ---m----
+        7'b0000010: oDIG2 = 4'h6;    // |     |
+        7'b1111000: oDIG2 = 4'h7;    // lb    rb
+        7'b0000000: oDIG2 = 4'h8;    // |     |
+        7'b0011000: oDIG2 = 4'h9;    // ---b----
+        7'b0001000: oDIG2 = 4'ha;
+        7'b0000011: oDIG2 = 4'hb;
+        7'b1000110: oDIG2 = 4'hc;
+        7'b0100001: oDIG2 = 4'hd;
+        7'b0000110: oDIG2 = 4'he;
+        7'b0001110: oDIG2 = 4'hf;
+        7'b1000000: oDIG2 = 4'h0;
+        default: oDIG2 = 4'h0;        // Default to 0 if no match
+    endcase
+end
+
+endmodule

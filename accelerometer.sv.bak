@@ -1,0 +1,120 @@
+	if(x > columnStart && x < columnStart+10 && y > rowStart && y < rowStart+10) begin
+		if(vol[12] >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+30 && y < rowStart+40) begin
+		if(vol[11] >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+60 && y < rowStart+70) begin
+		if(vol[10]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+90 && y < rowStart+100) begin
+		if(vol[9]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+120 && y < rowStart+130) begin
+		if(vol[8]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+150 && y < rowStart+160) begin
+		if(vol[7]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+180 && y < rowStart+190) begin
+		if(vol[6]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+210 && y < rowStart+220) begin
+		if(vol[5]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+240 && y < rowStart+250) begin
+		if(vol[4]  >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end
+	else if(x > columnStart && x < columnStart+10 && y > rowStart+270 && y < rowStart+280) begin
+		if(vol[3] >= max) begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'hF;
+		end
+		else begin
+			red <= 4'h0;
+			blue <= 4'h0;
+			green <= 4'h3;
+		end
+	end

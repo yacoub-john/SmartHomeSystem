@@ -1,0 +1,16 @@
+module draw_components(
+    input clk_50MHz,                   // sys clock
+    input reset,                        // reset clock
+    input tick_hr,                      // to increment hours
+    input tick_min,                     // to increment minutes
+    input set_am_pm,                    // to set AM or PM
+    output tick_1Hz,                    // 1Hz output signal
+    output am_pm,
+    output end_of_day,                  // 11:59:59 PM
+    output [3:0] sec_1s, sec_10s,       // BCD outputs for seconds
+    output [3:0] min_1s, min_10s,       // BCD outputs for minutes
+    output [3:0] hr_1s, hr_10s          // BCD outputs for hours
+    );
+    
+	 
+endmodule
